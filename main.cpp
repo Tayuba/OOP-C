@@ -3,8 +3,11 @@ using std::string;
 using std::cout;
 using std::endl;
 
+class AbtractEmployee{
+    virtual void AskPromotion() = 0;
+};
 // Create class
-class Employee {
+class Employee:AbtractEmployee {
 // Encapsulate
 private:
     string Name;
@@ -46,18 +49,19 @@ public:
         Company = company;
         Age = age;
     }
+    void AskPromotion(){
+        if(Age>30)
+            cout << Name << " got promoted! " << endl;
+        else
+            cout << Name << " sorry No  promotion for you! " << endl;
+    }
 
 };
 
 int main() {
-    Employee employee1 = Employee("Ayuba", "MonnieTech", 30);
-    employee1.IntroduceSelf();
-
+    Employee employee1 = Employee("Ayuba", "MonnieTech", 20);
     Employee employee2  = Employee("Tahiru", "MonnieTechNow", 35);
-    employee2.IntroduceSelf();
-
-    employee1.setAge(18);
-    cout << employee1.getName() << " is " << employee1.getAge() << " years old" << endl;
-
+    employee1.AskPromotion();
+    employee2.AskPromotion();
 
 }
