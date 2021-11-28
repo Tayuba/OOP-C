@@ -59,7 +59,10 @@ public:
         else
             cout << Name << " sorry No  promotion for you! " << endl;
     }
-
+// Create a function/method in class
+    virtual void Work(){
+        cout<< Name<< " is checking emails, task backlog, performing task..."<<endl;
+    }
 };
 
 // Inheritance
@@ -71,16 +74,19 @@ public:
     : Employee(name, company, age){
         FavprogrammingLang = favprogramminglanguage;
     }
-// Create a function in the class
+// Create a function/method in the class
     void FixBug(){
-        cout << Name << " fix bug using " << FavprogrammingLang << endl;
+        cout << Name << " fix bug using " << FavprogrammingLang<< endl;
+    }
+    void Work(){
+        cout<< Name<< " is writing "<<FavprogrammingLang<<" code"<<endl;
     }
 };
 
 class Teacher : public Employee{
 public:
     string Subject;
-// Create a function in the class
+// Create a function/method in the class
     void PrepareLessson(){
         cout << Name << " is preparing " << Subject << " lesson"<< endl;
     }
@@ -88,6 +94,9 @@ public:
     Teacher(string name, string company, int age, string subject)
     : Employee(name, company, age){
         Subject =subject;
+    }
+    void Work(){
+        cout<< Name<< " is teaching "<<Subject<<endl;
     }
 };
 
@@ -97,11 +106,21 @@ int main() {
 //    employee1.AskPromotion();
 //    employee2.AskPromotion();
     Developer dev = Developer("zsuzsa", "YVA", 28, "python");
-    dev.FixBug();
-    dev.FixBug();
+//    dev.FixBug();
+//    dev.FixBug();
     dev.AskPromotion();
     Teacher tech = Teacher("Musa", "makaranta", 36, "math");
-    tech.PrepareLessson();
+//    tech.PrepareLessson();
     tech.AskPromotion();
+//    dev.Work();
+//    tech.Work();
+    Employee *e1=&dev;
+    Employee *e2=&tech;
+    Employee *e3=&employee1;
+
+    e1->Work();
+    e2->Work();
+    e3->Work();
+
 
 }
