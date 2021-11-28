@@ -10,9 +10,12 @@ class AbtractEmployee{
 class Employee:AbtractEmployee {
 // Encapsulate
 private:
-    string Name;
     string Company;
     int Age;
+
+protected:
+    string Name;
+
 // make class public
 public:
     void  setName(string name){
@@ -49,6 +52,7 @@ public:
         Company = company;
         Age = age;
     }
+// Create a function in the class
     void AskPromotion(){
         if(Age>30)
             cout << Name << " got promoted! " << endl;
@@ -58,10 +62,46 @@ public:
 
 };
 
+// Inheritance
+class Developer: public Employee {
+public:
+    string FavprogrammingLang;
+//    Create a Constructor
+    Developer(string name, string company, int age, string favprogramminglanguage)
+    : Employee(name, company, age){
+        FavprogrammingLang = favprogramminglanguage;
+    }
+// Create a function in the class
+    void FixBug(){
+        cout << Name << " fix bug using " << FavprogrammingLang << endl;
+    }
+};
+
+class Teacher : public Employee{
+public:
+    string Subject;
+// Create a function in the class
+    void PrepareLessson(){
+        cout << Name << " is preparing " << Subject << " lesson"<< endl;
+    }
+    //    Create a Constructor
+    Teacher(string name, string company, int age, string subject)
+    : Employee(name, company, age){
+        Subject =subject;
+    }
+};
+
 int main() {
     Employee employee1 = Employee("Ayuba", "MonnieTech", 20);
     Employee employee2  = Employee("Tahiru", "MonnieTechNow", 35);
-    employee1.AskPromotion();
-    employee2.AskPromotion();
+//    employee1.AskPromotion();
+//    employee2.AskPromotion();
+    Developer dev = Developer("zsuzsa", "YVA", 28, "python");
+    dev.FixBug();
+    dev.FixBug();
+    dev.AskPromotion();
+    Teacher tech = Teacher("Musa", "makaranta", 36, "math");
+    tech.PrepareLessson();
+    tech.AskPromotion();
 
 }
