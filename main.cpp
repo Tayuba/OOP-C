@@ -5,12 +5,34 @@ using std::endl;
 
 // Create class
 class Employee {
-// make class public
-public:
+// Encapsulate
+private:
     string Name;
     string Company;
     int Age;
+// make class public
+public:
+    void  setName(string name){
+        Name = name;
+    }
+    string getName(){
+        return Name;
+    }
 
+    void  setCompany(string company){
+        Company = company;
+    }
+    string getCompany(){
+        return Company;
+    }
+
+    void setAge(int age){
+        if(age  >=18)
+        Age = age;
+    }
+    int getAge(){
+        return Age;
+    }
 // Create a function in the class
     void IntroduceSelf(){
         cout  <<"Name - " << Name << endl;
@@ -33,6 +55,9 @@ int main() {
 
     Employee employee2  = Employee("Tahiru", "MonnieTechNow", 35);
     employee2.IntroduceSelf();
+
+    employee1.setAge(18);
+    cout << employee1.getName() << " is " << employee1.getAge() << " years old" << endl;
 
 
 }
