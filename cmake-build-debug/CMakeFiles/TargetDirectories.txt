@@ -1,0 +1,3 @@
+C:/Users/ayuba/Documents/GitHub/C++/OOP C++/cmake-build-debug/CMakeFiles/OOP_C__.dir
+C:/Users/ayuba/Documents/GitHub/C++/OOP C++/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ayuba/Documents/GitHub/C++/OOP C++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
