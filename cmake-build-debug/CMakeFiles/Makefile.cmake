@@ -51,5 +51,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/OOP_C__.dir/DependInfo.cmake"
+  "CMakeFiles/if_else.dir/DependInfo.cmake"
+  "CMakeFiles/switch.dir/DependInfo.cmake"
   )

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/ayuba/Documents/GitHub/C++/OOP-C/main.cpp" "C:/Users/ayuba/Documents/GitHub/C++/OOP-C/cmake-build-debug/CMakeFiles/OOP_C__.dir/main.cpp.obj"
+  "C:/Users/ayuba/Documents/GitHub/C++/OOP-C/If_Else.cpp" "C:/Users/ayuba/Documents/GitHub/C++/OOP-C/cmake-build-debug/CMakeFiles/OOP_C__.dir/If_Else.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

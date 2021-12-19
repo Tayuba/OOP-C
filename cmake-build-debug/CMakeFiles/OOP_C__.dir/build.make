@@ -65,27 +65,27 @@ include CMakeFiles/OOP_C__.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/OOP_C__.dir/flags.make
 
-CMakeFiles/OOP_C__.dir/main.cpp.obj: CMakeFiles/OOP_C__.dir/flags.make
-CMakeFiles/OOP_C__.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ayuba\Documents\GitHub\C++\OOP-C\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OOP_C__.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\OOP_C__.dir\main.cpp.obj -c C:\Users\ayuba\Documents\GitHub\C++\OOP-C\main.cpp
+CMakeFiles/OOP_C__.dir/If_Else.cpp.obj: CMakeFiles/OOP_C__.dir/flags.make
+CMakeFiles/OOP_C__.dir/If_Else.cpp.obj: ../If_Else.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ayuba\Documents\GitHub\C++\OOP-C\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OOP_C__.dir/If_Else.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\OOP_C__.dir\If_Else.cpp.obj -c C:\Users\ayuba\Documents\GitHub\C++\OOP-C\If_Else.cpp
 
-CMakeFiles/OOP_C__.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_C__.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ayuba\Documents\GitHub\C++\OOP-C\main.cpp > CMakeFiles\OOP_C__.dir\main.cpp.i
+CMakeFiles/OOP_C__.dir/If_Else.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_C__.dir/If_Else.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ayuba\Documents\GitHub\C++\OOP-C\If_Else.cpp > CMakeFiles\OOP_C__.dir\If_Else.cpp.i
 
-CMakeFiles/OOP_C__.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_C__.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ayuba\Documents\GitHub\C++\OOP-C\main.cpp -o CMakeFiles\OOP_C__.dir\main.cpp.s
+CMakeFiles/OOP_C__.dir/If_Else.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_C__.dir/If_Else.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ayuba\Documents\GitHub\C++\OOP-C\If_Else.cpp -o CMakeFiles\OOP_C__.dir\If_Else.cpp.s
 
 # Object files for target OOP_C__
 OOP_C___OBJECTS = \
-"CMakeFiles/OOP_C__.dir/main.cpp.obj"
+"CMakeFiles/OOP_C__.dir/If_Else.cpp.obj"
 
 # External object files for target OOP_C__
 OOP_C___EXTERNAL_OBJECTS =
 
-OOP_C__.exe: CMakeFiles/OOP_C__.dir/main.cpp.obj
+OOP_C__.exe: CMakeFiles/OOP_C__.dir/If_Else.cpp.obj
 OOP_C__.exe: CMakeFiles/OOP_C__.dir/build.make
 OOP_C__.exe: CMakeFiles/OOP_C__.dir/linklibs.rsp
 OOP_C__.exe: CMakeFiles/OOP_C__.dir/objects1.rsp

@@ -116,41 +116,78 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named OOP_C__
+# Target rules for targets named if_else
 
 # Build rule for target.
-OOP_C__: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 OOP_C__
-.PHONY : OOP_C__
+if_else: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 if_else
+.PHONY : if_else
 
 # fast build rule for target.
-OOP_C__/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_C__.dir\build.make CMakeFiles/OOP_C__.dir/build
-.PHONY : OOP_C__/fast
+if_else/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\if_else.dir\build.make CMakeFiles/if_else.dir/build
+.PHONY : if_else/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+#=============================================================================
+# Target rules for targets named switch
+
+# Build rule for target.
+switch: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 switch
+.PHONY : switch
+
+# fast build rule for target.
+switch/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\switch.dir\build.make CMakeFiles/switch.dir/build
+.PHONY : switch/fast
+
+If_Else.obj: If_Else.cpp.obj
+.PHONY : If_Else.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_C__.dir\build.make CMakeFiles/OOP_C__.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+If_Else.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\if_else.dir\build.make CMakeFiles/if_else.dir/If_Else.cpp.obj
+.PHONY : If_Else.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+If_Else.i: If_Else.cpp.i
+.PHONY : If_Else.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_C__.dir\build.make CMakeFiles/OOP_C__.dir/main.cpp.i
-.PHONY : main.cpp.i
+If_Else.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\if_else.dir\build.make CMakeFiles/if_else.dir/If_Else.cpp.i
+.PHONY : If_Else.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+If_Else.s: If_Else.cpp.s
+.PHONY : If_Else.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_C__.dir\build.make CMakeFiles/OOP_C__.dir/main.cpp.s
-.PHONY : main.cpp.s
+If_Else.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\if_else.dir\build.make CMakeFiles/if_else.dir/If_Else.cpp.s
+.PHONY : If_Else.cpp.s
+
+Switch_Case.obj: Switch_Case.cpp.obj
+.PHONY : Switch_Case.obj
+
+# target to build an object file
+Switch_Case.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\switch.dir\build.make CMakeFiles/switch.dir/Switch_Case.cpp.obj
+.PHONY : Switch_Case.cpp.obj
+
+Switch_Case.i: Switch_Case.cpp.i
+.PHONY : Switch_Case.i
+
+# target to preprocess a source file
+Switch_Case.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\switch.dir\build.make CMakeFiles/switch.dir/Switch_Case.cpp.i
+.PHONY : Switch_Case.cpp.i
+
+Switch_Case.s: Switch_Case.cpp.s
+.PHONY : Switch_Case.s
+
+# target to generate assembly for a file
+Switch_Case.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\switch.dir\build.make CMakeFiles/switch.dir/Switch_Case.cpp.s
+.PHONY : Switch_Case.cpp.s
 
 # Help Target
 help:
@@ -160,10 +197,14 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... OOP_C__
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... if_else
+	@echo ... switch
+	@echo ... If_Else.obj
+	@echo ... If_Else.i
+	@echo ... If_Else.s
+	@echo ... Switch_Case.obj
+	@echo ... Switch_Case.i
+	@echo ... Switch_Case.s
 .PHONY : help
 
 
