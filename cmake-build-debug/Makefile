@@ -141,6 +141,19 @@ switch/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\switch.dir\build.make CMakeFiles/switch.dir/build
 .PHONY : switch/fast
 
+#=============================================================================
+# Target rules for targets named Data_Structure
+
+# Build rule for target.
+Data_Structure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Data_Structure
+.PHONY : Data_Structure
+
+# fast build rule for target.
+Data_Structure/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Data_Structure.dir\build.make CMakeFiles/Data_Structure.dir/build
+.PHONY : Data_Structure/fast
+
 If_Else.obj: If_Else.cpp.obj
 .PHONY : If_Else.obj
 
@@ -164,6 +177,30 @@ If_Else.s: If_Else.cpp.s
 If_Else.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\if_else.dir\build.make CMakeFiles/if_else.dir/If_Else.cpp.s
 .PHONY : If_Else.cpp.s
+
+Stack.obj: Stack.cpp.obj
+.PHONY : Stack.obj
+
+# target to build an object file
+Stack.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Data_Structure.dir\build.make CMakeFiles/Data_Structure.dir/Stack.cpp.obj
+.PHONY : Stack.cpp.obj
+
+Stack.i: Stack.cpp.i
+.PHONY : Stack.i
+
+# target to preprocess a source file
+Stack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Data_Structure.dir\build.make CMakeFiles/Data_Structure.dir/Stack.cpp.i
+.PHONY : Stack.cpp.i
+
+Stack.s: Stack.cpp.s
+.PHONY : Stack.s
+
+# target to generate assembly for a file
+Stack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Data_Structure.dir\build.make CMakeFiles/Data_Structure.dir/Stack.cpp.s
+.PHONY : Stack.cpp.s
 
 Switch_Case.obj: Switch_Case.cpp.obj
 .PHONY : Switch_Case.obj
@@ -197,11 +234,15 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Data_Structure
 	@echo ... if_else
 	@echo ... switch
 	@echo ... If_Else.obj
 	@echo ... If_Else.i
 	@echo ... If_Else.s
+	@echo ... Stack.obj
+	@echo ... Stack.i
+	@echo ... Stack.s
 	@echo ... Switch_Case.obj
 	@echo ... Switch_Case.i
 	@echo ... Switch_Case.s
